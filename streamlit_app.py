@@ -50,9 +50,6 @@ try:
 except URLerror as e:
   streamlit.error()
 
-#output it the screen as a table
-streamlit.dataframe(fruityvice_normalized)
-
 #don't run anything past here
 streamlit.stop()
 
