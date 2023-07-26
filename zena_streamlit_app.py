@@ -17,4 +17,7 @@ if streamlit.button('Get colour load list'):
     my_data_rows = my_cur.fetchall()
     streamlit.dataframe(my_data_rows)
 
+for row in my_data_rows:
+  print("Colour: ", row[0])
+  print("\n")
 
