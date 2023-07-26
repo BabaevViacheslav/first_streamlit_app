@@ -13,7 +13,7 @@ streamlit.title('Zena Amazing Athleisure Catalog')
 if streamlit.button('Get colour load list'):
   my_con = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   with my_con.cursor() as my_cur:
-    my_cur.execute("select * from ZENAS_ATHLEISURE_DB.PRODUCTS.CATALOG_FOR_WEBSITE")
+    my_cur.execute("select color_or_style from ZENAS_ATHLEISURE_DB.PRODUCTS.CATALOG_FOR_WEBSITE")
     my_data_rows = my_cur.fetchall()
     df = pandas.DataFrame(my_data_rows)
     streamlit.write(df)
