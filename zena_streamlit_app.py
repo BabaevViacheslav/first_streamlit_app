@@ -5,7 +5,7 @@ import snowflake.connector
 from urllib.error import URLError
 
 
-streamlit.title('Zena's Amazing Athleisure Catalog')
+streamlit.title('Zena Amazing Athleisure Catalog')
 
 /*
 #Add button to load a list of colours
