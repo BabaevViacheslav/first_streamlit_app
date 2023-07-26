@@ -16,7 +16,7 @@ if streamlit.button('Get colour load list'):
     my_cur.execute("select color_or_style, price, direct_url,size_list,upsell_product_desc   from ZENAS_ATHLEISURE_DB.PRODUCTS.CATALOG_FOR_WEBSITE")
     my_data_rows = my_cur.fetchall()
     df = pandas.DataFrame(my_data_rows)
-    streamlit.write(df)
+    streamlit.write(df[2])
 
 #for row in my_data_rows:
   #print("Colour: ", row[0])
