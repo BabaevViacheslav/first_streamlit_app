@@ -16,7 +16,7 @@ if streamlit.button('Get colour load list'):
     my_cur.execute("select * from ZENAS_ATHLEISURE_DB.PRODUCTS.CATALOG_FOR_WEBSITE")
     my_data_rows = my_cur.fetchall()
     df = pandas.dataframe(my_data_rows)
-    streamlit.dataframe(df.0)
+    streamlit.dataframe(df)
 
 #for row in my_data_rows:
   #print("Colour: ", row[0])
